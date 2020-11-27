@@ -12,9 +12,15 @@ import keras
 # https://medium.com/@romainvrh/sign-language-classifier-using-cnn-e5c2fb99ef51
 ######################################################
 
+normal = False
+
 ## Import data
-train = pd.read_csv('/home/alecsoc/Desktop/eecs504/project/sign_mnist_train/sign_mnist_train.csv')
-test = pd.read_csv('/home/alecsoc/Desktop/eecs504/project/sign_mnist_test/sign_mnist_test.csv')
+if normal:
+	train = pd.read_csv('/home/alecsoc/Desktop/eecs504/project/sign_mnist_train/sign_mnist_train.csv')
+	test = pd.read_csv('/home/alecsoc/Desktop/eecs504/project/sign_mnist_test/sign_mnist_test.csv')
+else:
+	train = pd.read_csv('/home/alecsoc/Desktop/eecs504/project/sign_mnist_train/mnist_rotate_train.csv')
+	test = pd.read_csv('/home/alecsoc/Desktop/eecs504/project/sign_mnist_test/mnist_rotate_test.csv')
 
 ## Dataframe to nparray
 labels = train['label'].values
