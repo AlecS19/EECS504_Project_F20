@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# No data files. Such as csv. They will be too large
+*.csv
