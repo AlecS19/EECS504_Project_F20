@@ -21,7 +21,8 @@ if normal:
     train = pd.read_csv('/home/alecsoc/Desktop/eecs504/project/sign_mnist_train/sign_mnist_train.csv')
     test = pd.read_csv('/home/alecsoc/Desktop/eecs504/project/sign_mnist_test/sign_mnist_test.csv')
 else:
-    train = pd.read_csv('/home/alecsoc/Desktop/mygit/EECS504_Project_F20/mnist_rotated_train.csv')
+    #train = pd.read_csv('/home/alecsoc/Desktop/mygit/EECS504_Project_F20/mnist_rotated_train.csv')
+    train = pd.read_csv('/home/alecsoc/Desktop/mygit/EECS504_Project_F20/AlecData.csv')
     test = pd.read_csv('/home/alecsoc/Desktop/mygit/EECS504_Project_F20/mnist_rotated_test.csv')
     
 
@@ -62,7 +63,7 @@ model = keras.Sequential()
 
 #CNN
 model.add(keras.layers.Conv2D(16,kernel_size=(3,3), activation='relu',input_shape=(28,28,1) ))
-model.add(keras.layers.MaxPooling2D(pool_size=(2,2)))
+#model.add(keras.layers.MaxPooling2D(pool_size=(2,2)))
 
 #CNN
 model.add(keras.layers.Conv2D(32,kernel_size=(3,3), activation='relu'))
@@ -74,7 +75,7 @@ model.add(keras.layers.MaxPooling2D(pool_size=(2,2)))
 
 #Fully-connected    
 model.add(keras.layers.Flatten())
-model.add(keras.layers.Dense(128, activation='relu'))
+model.add(keras.layers.Dense(64, activation='relu'))
 model.add(keras.layers.Dropout(0.10))
 
 #softmax

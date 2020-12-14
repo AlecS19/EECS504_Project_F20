@@ -13,6 +13,7 @@ pred1 = pd.read_csv('/home/alecsoc/Desktop/mygit/EECS504_Project_F20/manual.csv'
 pred = pred1.drop('label',axis=1)
 pred = pred.values
 pred /= 255
+print(pred.shape)
 pred = pred.reshape(pred.shape[0],28,28,1)
 
 prediction = model.predict(pred)

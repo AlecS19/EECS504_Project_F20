@@ -13,7 +13,7 @@ test = pd.read_csv('/home/alecsoc/Desktop/mygit/EECS504_Project_F20/sign_mnist_t
 theta1 = -90
 theta2 = 90
 
-trainRotated = rotateImages(train,theta1,theta2)
+trainRotated = rotateImages(train, theta1, theta2)
 testRotated = rotateImages(test, theta1, theta2)
 
 #Save datasets

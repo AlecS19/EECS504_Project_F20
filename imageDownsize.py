@@ -20,7 +20,7 @@ def imageResize(img, shape):
     y = (m - shape[1])//2
 
     return img[x:x+shape[0],y:y+shape[1]]
-    #return img
+
 
 def centerCrop(img, shape):
     n,m = img.shape
