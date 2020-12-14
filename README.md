@@ -2,8 +2,9 @@
 Project for EECS 504 Fall 2020
 
 Dataset: Kaggle MNIST Sign Language Dataset (https://www.kaggle.com/datamunge/sign-language-mnist) <br />
-Aim: To recognize alphabets of the english language in realtime, which can potentially be used as a communication tool for the deaf and muted
 
-# MODELS 
+<br />Aim: To recognize alphabets of the english language in realtime, which can potentially be used as a communication tool for the deaf and muted
+
+<br /><br /><br />MODELS 
   CNN - run testVideoCNN.py <br />
   <br />ResNet - run testVideoResNet.py
