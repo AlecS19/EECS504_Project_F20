@@ -5,5 +5,5 @@ Dataset: Kaggle MNIST Sign Language Dataset (https://www.kaggle.com/datamunge/si
 Aim: To recognize alphabets of the english language in realtime, which can potentially be used as a communication tool for the deaf and muted
 
 # MODELS 
-  # CNN - run testVideoCNN.py
-  # ResNet - run testVideoResNet.py
+  CNN - run testVideoCNN.py
+  ResNet - run testVideoResNet.py
