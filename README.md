@@ -8,3 +8,7 @@ Dataset: Kaggle MNIST Sign Language Dataset (https://www.kaggle.com/datamunge/si
 # MODELS 
   CNN - run testVideoCNN.py <br />
   <br />ResNet - run testVideoResNet.py
+
+
+# VIDEO
+https://drive.google.com/file/d/1e-BWnTXts7QX6yS3H923cxMGuAfGdDOy/view?usp=sharing
